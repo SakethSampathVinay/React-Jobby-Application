@@ -1,0 +1,72 @@
+/* General Styles */
+.jobs-bg-container {
+  background-color: #000000;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack items vertically on all devices */
+}
+
+.jobs-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.no-jobs-image {
+  height: 200px;
+}
+
+.no-jobs-found-heading {
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.lg-devices-jobs-container,
+.lg-devices-container {
+  width: 100%; /* Ensure full width on all devices */
+}
+
+/* Media Queries */
+@media screen and (min-width: 992px) {
+  .jobs-bg-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+  }
+  .searchinput-jobs-container {
+    display: none; /* Hide search input on large devices */
+  }
+
+  /* Remove specific large device width adjustments */
+  .lg-devices-container {
+    width: 25%; /* Ensure full width on large devices */
+  }
+
+  .lg-devices-jobs-container {
+    width: 75%; /* Ensure full width on large devices */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .searchinput-jobs-lg-container {
+    display: none; /* Hide search input for small devices */
+  }
+}
+
+.products-loader-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.jobs-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
